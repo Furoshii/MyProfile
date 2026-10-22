@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Commission | Japanlg Portfolio</title>
+    <meta
+        name="description"
+        content="Commission information, services, workflow, and contact details."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Commission page styles -->
+    <style>
+        .commission-page {
+            max-width: 1100px;
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 80px;
+        }
+
+        .commission-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 28px 0;
+            border-bottom: 1px solid #303047;
+        }
+
+        .commission-logo {
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 1.15rem;
+            text-decoration: none;
+        }
+
+        .commission-back {
+            color: #c4b5fd;
+            text-decoration: none;
+        }
+
+        .commission-back:hover {
+            color: #ffffff;
+        }
+
+        .commission-hero {
+            padding: 90px 0 60px;
+            max-width: 780px;
+        }
+
+        .commission-hero h1 {
+            margin: 14px 0 20px;
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            line-height: 1.08;
+            letter-spacing: -2px;
+        }
+
+        .commission-hero h1 span {
+            color: #a78bfa;
+        }
+
+        .commission-hero p {
+            max-width: 650px;
+            color: #aaaabe;
+            line-height: 1.8;
+        }
+
+        .commission-button {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 14px 22px;
+            border-radius: 10px;
+            background: #a78bfa;
+            color: #151321;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .commission-button:hover {
+            transform: translateY(-3px);
+            background: #c4b5fd;
+        }
+
+        .commission-section {
+            padding: 42px 0;
+        }
+
+        .commission-section h2 {
+            margin: 0 0 12px;
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+        }
+
+        .commission-muted {
+            color: #aaaabe;
+            line-height: 1.8;
+        }
+
+        .commission-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 28px;
+        }
+
+        .commission-card {
+            padding: 26px;
+            border: 1px solid #303047;
+            border-radius: 16px;
+            background: #171725;
+        }
+
+        .commission-card .service-number {
+            color: #a78bfa;
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .commission-card h3 {
+            margin: 14px 0 10px;
+            font-size: 1.25rem;
+        }
+
+        .commission-card p {
+            color: #aaaabe;
+            line-height: 1.8;
+        }
+
+        .commission-price {
+            margin-top: 20px;
+            color: #c4b5fd;
+            font-weight: 700;
+        }
+
+        .commission-list {
+            padding-left: 22px;
+            color: #aaaabe;
+            line-height: 2;
+        }
+
+        .commission-list li {
+            padding-left: 4px;
+            margin-bottom: 5px;
+        }
+
+        .commission-notice {
+            margin-top: 24px;
+            padding: 22px;
+            border: 1px solid #454064;
+            border-radius: 14px;
+            background: #201d31;
+            color: #d6d0ec;
+            line-height: 1.8;
+        }
+
+        .commission-contact {
+            margin-top: 32px;
+            padding: 38px;
+            border: 1px solid #454064;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #201d31, #171725);
+        }
+
+        .commission-contact h2 {
+            margin-bottom: 12px;
+        }
+
+        .commission-contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .commission-contact-links a {
+            display: inline-block;
+            padding: 12px 18px;
+            border: 1px solid #454064;
+            border-radius: 10px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .commission-contact-links a:hover {
+            border-color: #a78bfa;
+            background: #292442;
+        }
+
+        .commission-footer {
+            padding: 30px 0;
+            border-top: 1px solid #303047;
+            color: #88889f;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        @media (max-width: 650px) {
+            .commission-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .commission-hero {
+                padding-top: 60px;
+            }
+
+            .commission-contact {
+                padding: 25px;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main class="commission-page">
+
+        <!-- Navigation -->
+        <nav class="commission-nav">
+            <a class="commission-logo" href="index.html">
+                JAPANLG<span style="color:#a78bfa">.</span>
+            </a>
+
+            <a class="commission-back" href="index.html">
+                ← Back to Portfolio
+            </a>
+        </nav>
+
+        <!-- Hero -->
+        <header class="commission-hero">
+            <p class="eyebrow">WORK WITH ME</p>
+
+            <h1>
+                Let's create<br>
+                something <span>great.</span>
+            </h1>
+
+            <p>
+                Thank you for your interest in my work!
+                I offer creative and technical services for projects,
+                content creators, and independent developers.
+                Explore my services below and contact me to discuss your idea.
+            </p>
+
+            <a class="commission-button" href="#contact">
+                Discuss a Project ↗
+            </a>
+        </header>
+
+        <!-- Services -->
+        <section class="commission-section" id="services">
+            <p class="eyebrow">WHAT I OFFER</p>
+            <h2>Commission Services</h2>
+
+            <p class="commission-muted">
+                Each project is different. Final pricing depends on the
+                project's scope, complexity, and deadline.
+            </p>
+
+            <div class="commission-grid">
+
+                <article class="commission-card">
+                    <span class="service-number">01 / VIDEO</span>
+                    <h3>Video Editing</h3>
+                    <p>
+                        Editing for online videos, short-form content,
+                        clips, subtitles, transitions, and visual effects.
+                    </p>
+                    <p class="commission-price">
+                        Pricing: Discuss your project
+                    </p>
+                </article>
+
+                <article class="commission-card">
+                    <span class="service-number">02 / ANIMATION</span>
+                    <h3>Animation & Rigging</h3>
+                    <p>
+                        Animation and rigging work based on the project's
+                        requirements, available assets, and technical needs.
+                    </p>
+                    <p class="commission-price">
+                        Pricing: Discuss your project
+                    </p>
+                </article>
+
+                <article class="commission-card">
+                    <span class="service-number">03 / PROGRAMMING</span>
+                    <h3>Programming</h3>
+                    <p>
+                        Programming assistance and custom features for
+                        suitable projects. Please describe your requirements
+                        when contacting me.
+                    </p>
+                    <p class="commission-price">
+                        Pricing: Discuss your project
+                    </p>
+                </article>
+
+                <article class="commission-card">
+                    <span class="service-number">04 / GAME DEV</span>
+                    <h3>Game Development</h3>
+                    <p>
+                        Game-related implementation and development
+                        for selected projects, depending on scope and tools.
+                    </p>
+                    <p class="commission-price">
+                        Pricing: Discuss your project
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="commission-notice">
+                <strong>Before contacting me</strong><br>
+                Please note that not every project may be suitable.
+                I will review the requirements and confirm whether I can
+                take on the work before we agree on a price or deadline.
+            </div>
+        </section>
+
+        <!-- Workflow -->
+        <section class="commission-section" id="workflow">
+            <p class="eyebrow">THE PROCESS</p>
+            <h2>How It Works</h2>
+
+            <ol class="commission-list">
+                <li>
+                    <strong>Send your request.</strong>
+                    Tell me about your project, goals, and requirements.
+                </li>
+                <li>
+                    <strong>Discuss the details.</strong>
+                    We clarify the scope, deliverables, budget, and deadline.
+                </li>
+                <li>
+                    <strong>Confirm the agreement.</strong>
+                    Work begins after the scope, price, and payment terms
+                    have been agreed upon.
+                </li>
+                <li>
+                    <strong>Review and delivery.</strong>
+                    I deliver the agreed work and handle any revisions
+                    included in our agreement.
+                </li>
+            </ol>
+        </section>
+
+        <!-- Terms -->
+        <section class="commission-section" id="terms">
+            <p class="eyebrow">PLEASE READ</p>
+            <h2>Terms & Information</h2>
+
+            <ul class="commission-list">
+                <li>Prices are confirmed individually before work begins.</li>
+                <li>Deadlines depend on the project's scope and my availability.</li>
+                <li>Revision limits and additional revision fees will be agreed upon in advance.</li>
+                <li>Payment methods and payment schedules will be discussed before work begins.</li>
+                <li>Commercial usage rights and portfolio display permissions must be agreed upon for each project.</li>
+                <li>Please provide all necessary references, files, and requirements before work begins.</li>
+            </ul>
+
+            <div class="commission-notice">
+                By contacting me, you are not automatically booking a commission.
+                A commission is confirmed only after both parties agree on the
+                project details and terms.
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="commission-contact" id="contact">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Have a project in mind?</h2>
+
+            <p class="commission-muted">
+                Send me a message with your idea, the type of service you need,
+                your budget range, and your desired deadline.
+            </p>
+
+            <div class="commission-contact-links">
+                <a href="mailto:japanlg55@gmail.com">
+                    ✉ Email Me
+                </a>
+
+                <!-- Replace YOUR_USERNAME with your Instagram username -->
+                <a href="https://www.instagram.com/YOUR_USERNAME/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    ◎ Instagram
+                </a>
+            </div>
+        </section>
+
+        <footer class="commission-footer">
+            © 2026 Japanlg. All rights reserved.
+        </footer>
+
+    </main>
+</body>
+</html>
